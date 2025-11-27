@@ -1,0 +1,430 @@
+Assuming unrestricted shared filesystem usage.
+host: login04
+Building DAG of jobs...
+Using shell: /usr/local/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job       count
+------  -------
+all           1
+prokka       12
+total        13
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 12 jobs...
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.ffn
+    jobid: 1
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff
+    wildcards: fna=genusOD940420.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.ffn
+    jobid: 3
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff
+    wildcards: fna=genusOD940431.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.ffn
+    jobid: 5
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff
+    wildcards: fna=genusOD940437.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.ffn
+    jobid: 7
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff
+    wildcards: fna=speciesOU015345.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.ffn
+    jobid: 9
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff
+    wildcards: fna=speciesOU015708.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.ffn
+    jobid: 11
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff
+    wildcards: fna=speciesOU016027.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.ffn
+    jobid: 2
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff
+    wildcards: fna=genusOD940422.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.ffn
+    jobid: 4
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff
+    wildcards: fna=genusOD940434.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.ffn
+    jobid: 6
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff
+    wildcards: fna=genusOD940440.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.ffn
+    jobid: 8
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff
+    wildcards: fna=speciesOU015350.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.ffn
+    jobid: 10
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff
+    wildcards: fna=speciesOU015946.1.fna
+    resources: tmpdir=/tmp
+[Wed Nov 26 21:09:58 2025]
+localrule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.ffn
+    jobid: 12
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff
+    wildcards: fna=speciesOU016036.1.fna
+    resources: tmpdir=/tmp
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 9
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 11
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 3
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 6
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 12
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 4
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 1
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 10
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:12 2025]
+Error in rule prokka:
+    message: None
+    jobid: 2
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:13 2025]
+Error in rule prokka:
+    message: None
+    jobid: 7
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:13 2025]
+Error in rule prokka:
+    message: None
+    jobid: 8
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/grphome/grp_Assembly/pcrScripts/snakemake/main.smk", line 45:
+Command 'set -euo pipefail;  
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka' returned non-zero exit status 127.
+[Wed Nov 26 21:10:13 2025]
+Error in rule prokka:
+    message: None
+    jobid: 5
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 1
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 3
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 5
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 7
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 9
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 11
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 2
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 4
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 6
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 8
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 10
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+[Wed Nov 26 21:10:34 2025]
+Error in rule prokka:
+    message: None
+    jobid: 12
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.ffn
+    shell:
+        
+        /grphome/grp_Assembly/pcrScripts/snakemake/scripts/prokka.sh /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka
+        
+        (command exited with non-zero exit code)
+Complete log(s): /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/log/2025-11-26T210956.670268.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

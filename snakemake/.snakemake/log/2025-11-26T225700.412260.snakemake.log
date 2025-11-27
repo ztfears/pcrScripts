@@ -1,0 +1,43 @@
+host: login04
+Building DAG of jobs...
+SLURM run ID: 4216eda7-16cb-4e82-a10c-fd892f695ee2
+Using shell: /usr/local/bin/bash
+Provided remote nodes: 100
+Job stats:
+job       count
+------  -------
+all           1
+prokka        1
+total         2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Nov 26 22:57:00 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.ffn
+    jobid: 5
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff
+    wildcards: fna=genusOD940437.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, runtime=15
+No SLURM account given, trying to guess.
+Unable to guess SLURM account. Trying to proceed without.
+No partition was given for rule 'prokka', and unable to find a default partition. Trying to submit without partition information. You may want to invoke snakemake with --default-resources 'slurm_partition=<your default partition>'.
+Job 5 has been submitted with SLURM jobid 8741643 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940437.1.fna/8741643.log).
+[Wed Nov 26 23:01:06 2025]
+Finished jobid: 5 (Rule: prokka)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Nov 26 23:01:06 2025]
+localrule all:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff
+    jobid: 0
+    reason: Input files updated by another job: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, mem_mb_per_cpu=4000
+[Wed Nov 26 23:01:06 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Cleaning up SLURM log files older than 10 day(s).
+Complete log(s): /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/log/2025-11-26T225700.412260.snakemake.log

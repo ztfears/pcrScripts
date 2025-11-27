@@ -1,0 +1,5 @@
+Assuming unrestricted shared filesystem usage.
+host: login04
+Building DAG of jobs...
+MissingRuleException:
+No rule to produce --cluster=sbatch --partition={resources.slurm_partition} --time={resources.time} --mem={resources.mem_mb} --cpus-per-task={threads} --job-name={rule} (if you use input functions make sure that they don't raise unexpected exceptions).

@@ -1,0 +1,187 @@
+host: login04
+Building DAG of jobs...
+SLURM run ID: 03342f2c-9177-475c-9af5-a5d27df63477
+Using shell: /usr/local/bin/bash
+Provided remote nodes: 100
+Job stats:
+job       count
+------  -------
+all           1
+prokka       12
+total        13
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 12 jobs...
+[Wed Nov 26 22:23:59 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940440.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.ffn
+    jobid: 6
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff
+    wildcards: fna=genusOD940440.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+No SLURM account given, trying to guess.
+Unable to guess SLURM account. Trying to proceed without.
+No partition was given for rule 'prokka', and unable to find a default partition. Trying to submit without partition information. You may want to invoke snakemake with --default-resources 'slurm_partition=<your default partition>'.
+Job 6 has been submitted with SLURM jobid 8741627 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940440.1.fna/8741627.log).
+[Wed Nov 26 22:24:04 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015350.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.ffn
+    jobid: 8
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff
+    wildcards: fna=speciesOU015350.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 8 has been submitted with SLURM jobid 8741628 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/speciesOU015350.1.fna/8741628.log).
+[Wed Nov 26 22:24:04 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015946.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.ffn
+    jobid: 10
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff
+    wildcards: fna=speciesOU015946.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 10 has been submitted with SLURM jobid 8741629 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/speciesOU015946.1.fna/8741629.log).
+[Wed Nov 26 22:24:04 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016036.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.ffn
+    jobid: 12
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff
+    wildcards: fna=speciesOU016036.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 12 has been submitted with SLURM jobid 8741630 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/speciesOU016036.1.fna/8741630.log).
+[Wed Nov 26 22:24:05 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940420.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.ffn
+    jobid: 1
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff
+    wildcards: fna=genusOD940420.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 1 has been submitted with SLURM jobid 8741631 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940420.1.fna/8741631.log).
+[Wed Nov 26 22:24:05 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940431.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.ffn
+    jobid: 3
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff
+    wildcards: fna=genusOD940431.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 3 has been submitted with SLURM jobid 8741632 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940431.1.fna/8741632.log).
+[Wed Nov 26 22:24:05 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940437.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.ffn
+    jobid: 5
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff
+    wildcards: fna=genusOD940437.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 5 has been submitted with SLURM jobid 8741633 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940437.1.fna/8741633.log).
+[Wed Nov 26 22:24:05 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015345.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.ffn
+    jobid: 7
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff
+    wildcards: fna=speciesOU015345.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 7 has been submitted with SLURM jobid 8741634 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/speciesOU015345.1.fna/8741634.log).
+[Wed Nov 26 22:24:05 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU015708.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.ffn
+    jobid: 9
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff
+    wildcards: fna=speciesOU015708.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 9 has been submitted with SLURM jobid 8741635 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/speciesOU015708.1.fna/8741635.log).
+[Wed Nov 26 22:24:06 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/speciesOU016027.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.ffn
+    jobid: 11
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff
+    wildcards: fna=speciesOU016027.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 11 has been submitted with SLURM jobid 8741636 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/speciesOU016027.1.fna/8741636.log).
+[Wed Nov 26 22:24:06 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940422.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.ffn
+    jobid: 2
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff
+    wildcards: fna=genusOD940422.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 2 has been submitted with SLURM jobid 8741637 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940422.1.fna/8741637.log).
+[Wed Nov 26 22:24:06 2025]
+rule prokka:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/strains/genusOD940434.1.fna
+    output: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.ffn
+    jobid: 4
+    reason: Missing output files: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff
+    wildcards: fna=genusOD940434.1.fna
+    threads: 4
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, mem_mb_per_cpu=4000, account=zfears, runtime=15
+Job 4 has been submitted with SLURM jobid 8741638 (log: /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/slurm_logs/rule_prokka/genusOD940434.1.fna/8741638.log).
+[Wed Nov 26 22:25:02 2025]
+Finished jobid: 6 (Rule: prokka)
+1 of 13 steps (8%) done
+[Wed Nov 26 22:27:30 2025]
+Finished jobid: 10 (Rule: prokka)
+2 of 13 steps (15%) done
+[Wed Nov 26 22:27:30 2025]
+Finished jobid: 12 (Rule: prokka)
+3 of 13 steps (23%) done
+[Wed Nov 26 22:27:30 2025]
+Finished jobid: 1 (Rule: prokka)
+4 of 13 steps (31%) done
+[Wed Nov 26 22:27:30 2025]
+Finished jobid: 3 (Rule: prokka)
+5 of 13 steps (38%) done
+[Wed Nov 26 22:27:30 2025]
+Finished jobid: 5 (Rule: prokka)
+6 of 13 steps (46%) done
+[Wed Nov 26 22:27:31 2025]
+Finished jobid: 7 (Rule: prokka)
+7 of 13 steps (54%) done
+[Wed Nov 26 22:27:31 2025]
+Finished jobid: 9 (Rule: prokka)
+8 of 13 steps (62%) done
+[Wed Nov 26 22:27:31 2025]
+Finished jobid: 11 (Rule: prokka)
+9 of 13 steps (69%) done
+[Wed Nov 26 22:27:31 2025]
+Finished jobid: 2 (Rule: prokka)
+10 of 13 steps (77%) done
+[Wed Nov 26 22:27:31 2025]
+Finished jobid: 4 (Rule: prokka)
+11 of 13 steps (85%) done
+[Wed Nov 26 22:28:11 2025]
+Finished jobid: 8 (Rule: prokka)
+12 of 13 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Nov 26 22:28:11 2025]
+localrule all:
+    input: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff
+    jobid: 0
+    reason: Input files updated by another job: /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940440.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015946.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940434.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940437.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015345.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940422.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015708.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU015350.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940431.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016027.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/genusOD940420.1.fna.gff, /home/zfears/Desktop/pcrProj/sm_eFaecium/prokka/speciesOU016036.1.fna.gff
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp, mem_mb_per_cpu=4000, account=zfears
+[Wed Nov 26 22:28:11 2025]
+Finished jobid: 0 (Rule: all)
+13 of 13 steps (100%) done
+Cleaning up SLURM log files older than 10 day(s).
+Complete log(s): /grphome/grp_Assembly/pcrScripts/snakemake/.snakemake/log/2025-11-26T222358.370047.snakemake.log

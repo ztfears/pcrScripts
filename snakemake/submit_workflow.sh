@@ -1,7 +1,7 @@
 #!/bin/bash
 #submit with 'sbatch submit_workflow.sh <inputDir>'
 
-#SBATCH --time=10:00:00   # walltime
+#SBATCH --time=15:00:00   # walltime
 #SBATCH --ntasks=2   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --mem-per-cpu=8G   # memory per CPU core
@@ -18,7 +18,8 @@ SCRIPTS_DIR=/grphome/grp_Assembly/pcrScripts/snakemake/scripts
 module load miniconda3
 conda run -p /grphome/grp_Assembly/snakemake \
 	snakemake --executor slurm --jobs 200 \
+	--latency-wait 60 \
 	--use-conda \
-	--default-resources mem_mb_per_cpu=4000 slurm_job_name="{rule}" \
+	--default-resources mem_mb_per_cpu=4000 \
 	-s main.smk \
 	--config input_dir="$INPUT_DIR" scripts_dir="$SCRIPTS_DIR"

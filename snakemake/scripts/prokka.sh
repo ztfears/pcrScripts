@@ -26,7 +26,5 @@ output_dir="$2"
 echo $output_dir
 echo $input_dir/$file_name
 
-#module load miniconda3
-#conda run -p /nobackup/archive/grp/grp_Assembly/shared-conda-pkgs/envs/prokka \
-	prokka --outdir $output_dir --prefix $file_name --force $input_dir/$file_name
+prokka --outdir $output_dir --prefix $file_name --force $input_dir/$file_name
 

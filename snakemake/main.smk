@@ -101,6 +101,7 @@ checkpoint findTargetGenes:
         scripts_dir=SCRIPTS_DIR
     shell:
         """
+        mkdir -p {params.input_dir}/targetGenes
         Rscript --vanilla {params.scripts_dir}/findTargetGenes.R {input} {params.input_dir}/targetGenes
         """
 

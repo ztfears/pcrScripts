@@ -6,7 +6,7 @@ set -e
 echo "Loading Conda"
 module load miniconda3
 
-echo "Running findTargetGenes.R"
+echo "Running findTargetGenes_modified.R"
 
 mkdir -p $2
 conda run -p /grphome/grp_Assembly/tidy Rscript --vanilla /grphome/grp_Assembly/pcrScripts/findTargetGenes.R $1 $2

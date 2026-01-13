@@ -76,5 +76,10 @@ for (geneID in t(genesToSave)){
   locus_tags <- locus_tags[,3]
   colnames(locus_tags) <- NULL
 
+  locusVstrain <- gpa |>
+    filter(Gene == geneID) |>
+    select(strain,locus_tag)
+
   write.csv(locus_tags, paste0(outputDir,prefix,geneID,".csv"), row.names = FALSE, quote = FALSE)
+  write.csv(locusVstrain, paste0(outputDir,prefix,geneID,"_locVstr.csv"), row.names = FALSE, quote = FALSE)
 }

@@ -287,14 +287,18 @@ for(p in 1:n_possible_primers){
 
 ###bunch of duplicates between plated bins
 ###return only unique sequences
-
-plated_spe_unique <- plated_spe |>
-  anti_join(plated_gen, join_by(start,stop)) |> rowwise() |>
-  mutate(sequence = paste(consensus_spe[start:stop], collapse = "")) |> 
-  mutate(hasGaps = str_detect(sequence, "-")) |>
-  filter(hasGaps == FALSE) |>
-  select(-hasGaps,-xsqIndeppvalues)
-
+if (nrow(plated_spe) > 0 && nrow(plated_gen) > 0){
+  plated_spe_unique <- plated_spe |>
+    anti_join(plated_gen, join_by(start,stop)) |> rowwise() |>
+    mutate(sequence = paste(consensus_spe[start:stop], collapse = "")) |> 
+    mutate(hasGaps = str_detect(sequence, "-")) |>
+    filter(hasGaps == FALSE) |>
+    select(-hasGaps,-xsqIndeppvalues)
+} else if (nrow(plated_spe) > 0 && nrow(plated_gen) == 0){
+  plated_spe_unique <- plated_spe
+} else {
+  plated_spe_unique <- data.frame()
+}
 
 tempStringSolid <- c(directory,"/solid_",gene_name,"_primers.csv")
 outfileSolid <- paste(tempStringSolid, collapse="")

@@ -1,0 +1,6 @@
+name: /grphome/grp_Assembly/prokka
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+prefix: /grphome/grp_Assembly/prokka

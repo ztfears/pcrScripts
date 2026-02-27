@@ -1,0 +1,28 @@
+If you have a CSV full of GenBank Accession numbers, then you can run the following command (replacing the fileName placeholder) to download them all from GenBank:
+
+for i in `cat fileName.csv`; do
+        curl -s  "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${i}&rettype=fasta&retmode=txt">$i.fna;
+done
+
+
+
+To add either a gen or spec prefix to the beginning of your FNA files, you can use the following (replacing the species placeholder):
+
+for f in *.fna; do
+	if [[ "$(head -n 1 $f)" == *species* ]]; then
+		mv "$f" "spec$f";
+	else
+		mv "$f" "gen$f";
+	fi;
+done
+
+
+
+To relabel a portion of your genomes to include more species under your "spec" group (such as when dealing with complexes), you can use the following (replacing the species placeholder):
+
+for file in gen*; do
+	[ -f "$file" ] || continue;
+	if head -n 1 "$file" | grep -q "species"; then
+		mv "$file" "${file/gen/spec}";
+	fi;
+done

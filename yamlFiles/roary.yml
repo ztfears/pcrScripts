@@ -1,0 +1,6 @@
+name: /grphome/grp_Assembly/roary
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+prefix: /grphome/grp_Assembly/roary

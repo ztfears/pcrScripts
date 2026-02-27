@@ -1,0 +1,6 @@
+name: /grphome/grp_Assembly/mafft
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+prefix: /grphome/grp_Assembly/mafft

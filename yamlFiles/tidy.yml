@@ -1,0 +1,9 @@
+name: /grphome/grp_Assembly/tidy
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - conda-forge::r-dplyr
+  - conda-forge::r-tidyr
+prefix: /grphome/grp_Assembly/tidy

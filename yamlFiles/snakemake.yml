@@ -1,0 +1,9 @@
+name: /grphome/grp_Assembly/snakemake
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - snakemake
+  - snakemake-executor-plugin-slurm
+prefix: /grphome/grp_Assembly/snakemake

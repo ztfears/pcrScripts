@@ -1,0 +1,12 @@
+name: /grphome/grp_Assembly/seqinr
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - conda-forge::r-seqinr
+  - r-dplyr
+  - r-tidyr
+  - bioconda::primer3
+  - r-tidyverse
+prefix: /grphome/grp_Assembly/seqinr

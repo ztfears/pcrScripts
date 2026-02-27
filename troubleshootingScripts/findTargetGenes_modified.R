@@ -9,8 +9,8 @@ if(length(args)==0){
   print("No arguments supplied.")
 }
  
-genusThreshold <- 0.15
-speciesThreshold <- 0.85
+genusThreshold <- 0.015
+speciesThreshold <- 0.99
 
 gpa <- read.csv(args[1], header = TRUE, stringsAsFactors = FALSE) |>
 #gpa <- read.csv("sAgalactiaeOut.csv") |>

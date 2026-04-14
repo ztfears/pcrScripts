@@ -1,5 +1,5 @@
 #!/bin/bash
-#submit with ' ./submit_workflow.sh <inputDir>'
+#submit with  ./submit_workflow.sh <inputDir>
 set -e
 
 INPUT_DIR=$1

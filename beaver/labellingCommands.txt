@@ -1,11 +1,3 @@
-If you have a CSV full of GenBank Accession numbers, then you can run the following command (replacing the fileName placeholder) to download them all from GenBank:
-
-for i in `cat fileName.csv`; do
-        curl -s  "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${i}&rettype=fasta&retmode=txt">$i.fna;
-done
-
-
-
 To add either a gen or spec prefix to the beginning of your FNA files, you can use the following (replacing the species placeholder):
 
 for f in *.fna; do

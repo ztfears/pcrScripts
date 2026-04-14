@@ -16,4 +16,4 @@ fi
 num_file=$(ls -1 $input_dir | wc -l)
 mkdir -p $output_dir/slurm_results
 
-sbatch --array 1-$num_file -o $output_dir/slurm_results/slurm-%A_%a.out /grphome/grp_Assembly/pcrScripts/mafft.sh $input_dir $output_dir
+sbatch --array 1-$num_file -o $output_dir/slurm_results/slurm-%A_%a.out /grphome/grp_Assembly/pcrScripts/troubleshootingScripts/mafft.sh $input_dir $output_dir

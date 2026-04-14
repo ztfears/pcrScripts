@@ -1,0 +1,8 @@
+name: /grphome/grp_Assembly/beaver
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - r-tidyverse
+prefix: /grphome/grp_Assembly/beaver

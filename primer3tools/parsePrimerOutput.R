@@ -3,8 +3,16 @@ library(seqinr)
 
 topNum <- 20
 
+
+### Change this variable to be the bacteria directory you're working from (the one with the primers and mafft folders)
+### Then just hit Ctrl+Shift+Enter; then after it's done you should have a bunch of consensus_seq.txt and datasheet.csv files
+
+targetDir <- "/home/kbarto10/lactobacillus"
+
+
+
+
 all_best_primers <- tibble()
-targetDir <- "/home/zfears/Desktop/pcrProj/eFaecalis"
 primerDir <- paste0(targetDir,"/primers")
 mafftDir <- paste0(targetDir,"/mafft")
 files_list <- list.files(path = primerDir , pattern = "_output.txt", full.names = TRUE)
@@ -59,3 +67,27 @@ for(geneId in top_amplicons_by_pair_penalty){
   con <- paste0(str_to_upper(consensus(msa, method = "majority")), collapse = "")
   cat(con, file=paste0(primerDir,"/",geneId,"_consensus_seq.txt"))
 }
+
+
+# error_entries <- character()
+# 
+# for (file in files_list){
+#   tryCatch({
+#     data_wide <- read_lines(file) |>
+#       discard(~ .x == "" | .x == "=") |>
+#       str_split_fixed("=", 2) |>
+#       as_tibble(.name_repair = "minimal") |>
+#       set_names(c("variable", "value")) |>
+#       mutate(value = parse_guess(value)) |>
+#       pivot_wider(names_from = variable, values_from = value)
+#     if(as.numeric(data_wide$PRIMER_PAIR_NUM_RETURNED) > 1){
+#       row_to_add <- data_wide |> select(SEQUENCE_ID, contains("0")) |> select(contains(c("SEQUENCE", "PENALTY", "TM")))
+#       all_best_primers <- all_best_primers |> bind_rows(row_to_add)
+#     }
+#   }, error = function(e) {
+#     error_entries <<- c(error_entries, file)
+#     print(paste("Error with entry:", file))
+#   })
+# }
+# 
+# cat(error_entries, file = "errors_entries.txt", sep = "\n")

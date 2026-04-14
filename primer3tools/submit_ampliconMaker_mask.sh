@@ -10,4 +10,4 @@ num_file=$(ls -1 $input_dir/*.afa | wc -l)
 mkdir -p $output_dir
 mkdir -p $output_dir/slurm_results
 
-sbatch --array 1-$num_file -o $output_dir/slurm_results/slurm-%A_%a.out /grphome/grp_Assembly/pcrScripts/ampliconMaker_mask.sh $input_dir $labels_dir $output_dir $threshold
+sbatch --array 1-$num_file -o $output_dir/slurm_results/slurm-%A_%a.out /grphome/grp_Assembly/pcrScripts/primer3tools/ampliconMaker_mask.sh $input_dir $labels_dir $output_dir $threshold

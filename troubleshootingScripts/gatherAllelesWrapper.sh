@@ -22,7 +22,7 @@ echo "Creating temp file"
 #Combine all .ffn files for easy querying
 cat $prokkaDir/"$fileTag"*.ffn > $tempFile
 
-for csv in $ftgDir/*.csv; do /grphome/grp_Assembly/pcrScripts/gatherAlleles.sh $csv $tempFile; done
+for csv in $ftgDir/*.csv; do /grphome/grp_Assembly/pcrScripts/troubleshootingScripts/gatherAlleles.sh $csv $tempFile; done
 
 echo "Cleaning up temp file"
 #Cleanup combined .ffn to save space over time

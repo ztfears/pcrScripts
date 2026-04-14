@@ -7,9 +7,11 @@ if(length(args)==0){
 }
 
 outputDir <- args[2]
+#outputDir <- "~/Desktop/pcrProj/neisseria/targetGenes"
+labelsDir <- paste0(dirname(outputDir), "/labels")
 
 gpa <- read.csv(args[1], header = TRUE, stringsAsFactors = FALSE) |>
-#gpa <- read.csv("eFaeciumOut2.csv") |>
+#gpa <- read.csv("~/Desktop/pcrProj/neisseria/roary/gene_presence_absence.csv") |>
   select(Gene,ends_with(".fna"))
 
 #calculate number of species strains and number of total genus strains
@@ -66,6 +68,9 @@ if(nrow(specOnlyGenes) > 0){
 }
 
 #geneID <- "rplK"
+if(prefix == "/all_"){
+  dir.create(labelsDir, showWarnings = FALSE)
+}
 
 for (geneID in t(genesToSave)){
   #pull all locus tags for gene, put in single column df
@@ -75,11 +80,15 @@ for (geneID in t(genesToSave)){
     )
   locus_tags <- locus_tags[,3]
   colnames(locus_tags) <- NULL
-
-  locusVstrain <- gpa |>
-    filter(Gene == geneID) |>
-    select(strain,locus_tag)
-
-  write.csv(locus_tags, paste0(outputDir,prefix,geneID,".csv"), row.names = FALSE, quote = FALSE)
-  write.csv(locusVstrain, paste0(outputDir,prefix,geneID,"_locVstr.csv"), row.names = FALSE, quote = FALSE)
+  
+  cleaned_geneID <- gsub("[^a-zA-Z0-9_.-]", "_", geneID)
+  
+  write.csv(locus_tags, paste0(outputDir,prefix,cleaned_geneID,".csv"), row.names = FALSE, quote = FALSE)
+  
+  if(prefix == "/all_"){
+    locusVstrain <- gpa |>
+      filter(Gene == geneID) |>
+      select(strain,locus_tag)
+    write.csv(locusVstrain, paste0(labelsDir,prefix,cleaned_geneID,"_locVstr.csv"), row.names = FALSE, quote = FALSE)
+  }
 }

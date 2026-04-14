@@ -1,0 +1,8 @@
+name: /grphome/grp_Assembly/seqtk
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - seqtk
+prefix: /grphome/grp_Assembly/seqtk

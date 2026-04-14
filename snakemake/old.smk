@@ -79,7 +79,7 @@ rule gatherAlleles:
         "/grphome/grp_Assembly/seqtk"
     resources:
         runtime=30
-    threads: 1
+    threads: 2
     params:
         input_dir=INPUT_DIR,
         scripts_dir=SCRIPTS_DIR
@@ -97,7 +97,7 @@ checkpoint findTargetGenes:
         "/grphome/grp_Assembly/tidy"
     resources:
         runtime=60
-    threads: 1
+    threads: 4
     params:
         input_dir=INPUT_DIR,
         scripts_dir=SCRIPTS_DIR
@@ -152,7 +152,7 @@ rule prokka:
         "/nobackup/archive/grp/grp_Assembly/shared-conda-pkgs/envs/prokka"
     resources:
         runtime=15
-    threads: 1
+    threads: 4
     params:
         input_dir=INPUT_DIR,
         scripts_dir=SCRIPTS_DIR

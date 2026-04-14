@@ -19,7 +19,7 @@ threshold=$4
 
 input_file=$(ls -1 $input_dir/*.afa | head -${SLURM_ARRAY_TASK_ID} | tail -1)
 
-settingsFile=/grphome/grp_Assembly/pcrScripts/primer3_settings_mask.txt
+settingsFile=/grphome/grp_Assembly/pcrScripts/primer3tools/primer3_settings_mask.txt
 
 echo "Loading Conda ..."
 module load miniconda3
@@ -35,8 +35,8 @@ geneId="${temp#*_}"
 echo "Processing $input_file..."
 conda run --no-capture-output -p /grphome/grp_Assembly/seqinr bash -c "
   set -e
-  Rscript --vanilla /grphome/grp_Assembly/pcrScripts/formEntWgtConsensus_mask.R ${input_file} ${labels_dir}/${temp}_locVstr.csv ${threshold}
-  cat ${settingsFile} ${stem}/${geneId}*.txt | primer3_core > ${stem}/${geneId}_output${threshold}.txt
+  Rscript --vanilla /grphome/grp_Assembly/pcrScripts/primer3tools/formEntWgtConsensus_mask.R ${input_file} ${labels_dir}/${temp}_locVstr.csv ${threshold}
+  cat ${settingsFile} ${stem}/${geneId}*.txt | primer3_core > ${stem}/${geneId}_output.txt
 "
 
 mv $stem/$geneId* $output_dir

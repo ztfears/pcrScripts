@@ -13,11 +13,11 @@ genusThreshold <- 0.015
 speciesThreshold <- 0.99
 
 gpa <- read.csv(args[1], header = TRUE, stringsAsFactors = FALSE) |>
-#gpa <- read.csv("sAgalactiaeOut.csv") |>
+#gpa <- read.csv("~/Desktop/pcrProj/staph/sAureus/roary/gene_presence_absence.csv") |>
   select(Gene,ends_with(".fna"))
 
 outputDir <- args[2]
-# outputDir <- "C:/Users/zachf/RProjects/roaryOut"
+# outputDir <- "~/Desktop/pcrProj/staph/sAureus/targetGenes"
 
 #calculate number of species strains and number of total genus strains
 nStrains <- (ncol(gpa) - 1)
@@ -56,7 +56,7 @@ specOnlyGenes <- gpa |>
   )
 
 genesToSave <- specOnlyGenes[,1]
-prefix <- "/twofer_"
+prefix <- "/spec_"
 
 
 for (geneID in t(genesToSave)){

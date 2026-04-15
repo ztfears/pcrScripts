@@ -1,29 +1,31 @@
 =========== PCR Primer/Probe Workflow =============
 The PCR Primer/Probe workflow is used to find primer/probe setups sensitive to a bacterial species and specific against the remainder of its genus
 
-The input for the workflow is a set of complete genome FASTA files for an entire genus, typically found through BV-BRC.org and downloaded from GenBank
-These files should also have a prefix added to the filenames to designate the target species/species group and the rest of the genus, where the workflow assumes you labeled using "spec" and "gen" prefixes
-	(a useful command for downloading genomes from a CSV of GenBank Accession numbers can be found in usefulCommands.txt)
-	(another useful command for adding prefixes to the beginning of your genome files based on the name found in the file text can also be found at usefulCommands.txt)
-The output is a series of BoulderIO formatted text files with the primer/probe setups specific for your target.
+The input for the main workflow is a set of complete genome FASTA files for an entire genus, typically found through BV-BRC.org and downloaded from GenBank
+These files should also have a prefix added to the filenames to designate the target species/species group and the rest of the genus, where the workflow assumes you labeled using "spec" and "gen" prefixes.
+The output from the main workflow is a series of MAFFT-generated alignment files which can be used with tools found in the primer3tools folder to generate primer/probe setups specific for your target
+
+The main workflow and supporting scripts can be found in the snakemake folder, with usage instructions found at the top of the submit_workflow.sh file.
+Workflow assumes you are using the Slurm workload manager.
+
+The other 4 folders are as follows:
+- beaver: A set of tools that takes a raw CSV file from a BV-BRC.org query, preprocesses it, and references it to download and attach appropriate prefixes to complete genome files
+- yamlFiles: YAML markdown files to be used to set up conda envs that Snakemake and other tools are dependent on
+- troubleshootingScripts: Scripts that run individual workflow steps in isolation for easier troubleshooting
+- primer3tools: Set of tools used to take an AFA file for a target gene and generate primer/probe setups specific to your target
 
 
-The current iteration of the workflow comprises of two parts:
+The current iteration of the workflow comprises of three parts:
+- Downloading and organizing complete genomes
 - Preprocessing with a Snakemake pipeline
 - Generating Primer/Probe setups using Primer3 and some other more hands-on scripts to clean up the output
 
-Included in this repo are the following:
-- The Snakemake pipeline with dependent scripts
-- Standalone scripts for running each Snakemake step separately for better troubleshooting
-- Scripts for formatting input, submitting to, and processing output from Primer3, along with its necessary settings file(s)
-- usefulCommands.txt, which contain some helpful Bash commands for downloading genomes and (re)labelling them
-- YAML files for setting up the conda envs Snakemake and Primer3 rely on
 
 Instructions on running any script, whether the submission script for Snakemake or others, is written at the top of said script in a comment so you can easily copy, paste, and run it
 
 The Snakemake pipeline assumes you have the following file structure:
 
-targetInputDir/
+<targetInputDirName>/
 ├─ strains/
 │  ├─ genCP000XXXX.fna
 │  ├─ genCP000XXXX.fna

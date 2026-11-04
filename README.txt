@@ -61,3 +61,6 @@ Versions:
 R: 4.5.1
 Snakemake: 9.16.3
 Primer3: 2.6.1
+MAFFT: v7.526
+Prokka: v1.14.6
+Roary: v3.13.0

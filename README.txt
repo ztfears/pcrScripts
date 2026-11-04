@@ -34,6 +34,8 @@ The Snakemake pipeline assumes you have the following file structure:
 
 with all of your prefix-labelled genome files inside the strains file
 
+An example file structure is provided in the "exampmleData" folder, along with a list of GenBank Accession numbers used in the initial analysis for L. acidophilus. We chose to only provide 2 target species genomes and 1 off-target genus member genome, the corresponding prokka output files that we utilize (GFF and FFN), the Roary presence-absence matrix, and then the intermediate outputs and suggested primer candidates for purQ, a gene found to be 100% specific and sensitive in our initial analysis.
+
 The Snakemake pipeline consists of the following major steps, with some minor adjustments steps in between:
 1. Gene annotation for each genome (Prokka)
 2. Pan-genome analysis (Roary)

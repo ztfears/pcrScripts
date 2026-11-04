@@ -54,3 +54,8 @@ Ideally in the future we'll have the Primer3 tools integrated into the Snakemake
 A note on the Primer3 melting temperature settings:
 At first glance they may seem exceedingly low for standard PCR primer/probe tools but when double-checked with an oligo Tm calculator from IDT, the Tm's come out to ~60C for primers and ~70C for the probes.
 The reason why there's such a discrepancy is that Primer3 utilizes only the SantaLucia method for calculating Tm's, while IDT uses the SantaLucia thermodynamic formula along with the Owczarzy salt correction formula. In practice, members of our lab have found IDT's prediction to be fairly accurate so we lowered our target Tm ranges on Primer3 so that when put through IDT, we'd get our ideal Tm's
+
+Versions:
+R: 4.5.1
+Snakemake: 9.16.3
+Primer3: 2.6.1
